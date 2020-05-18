@@ -1,0 +1,15 @@
+*,*::after,*::before{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body { 
+    background-image: url("https://i.postimg.cc/9QqtCCFp/brooke-lark-08b-OYn-H-r-E-unsplash-1.jpg");
+    background-size: cover;
+    background-position-y: -5rem;
+}
