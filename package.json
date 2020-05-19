@@ -10,7 +10,6 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/styles.css -w",
     "dev": "concurrently \" npm run compile:sass \" \"live-server\""
-    
   },
   "author": "cownut",
   "license": "ISC"

@@ -1,0 +1,58 @@
+.cart {
+	font-size: 1.6rem;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+	&__photo{
+		position: relative;
+		z-index: 3;
+		&--fix{
+			height: 58%;
+		}
+		
+	}
+	&__hot{
+		width: 4.5rem;
+		height: 4.5rem;
+		position: absolute;
+		z-index: 2;
+		top: -5.4%;
+		right: 0;
+
+	}
+	&__body{
+		&--heading {
+			display: inline;
+			font-size: 3rem;
+			background-color: #FF9A8B;
+            background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+			-webkit-background-clip: text;
+		   	-webkit-text-fill-color: transparent;
+		}
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 5rem;
+			li{ 
+				flex:0 0 50%;
+				list-style: none;
+				margin-bottom: 2.5rem;
+				color: darkorange;
+				font-size: 1.8rem;
+				transition: all 0.2s ease-in-out;
+				&:hover{
+					cursor: pointer;
+					transform: scale(1.05);
+
+				}
+			}
+		}
+	}
+	&:hover{
+		transform: scale(1.1);
+		box-shadow: 0 2rem 4rem rgba(0,0,0,0.5);
+
+	}
+
+}
