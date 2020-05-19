@@ -45,7 +45,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .heading__primary {
   font-size: 4.5rem;
@@ -109,6 +109,10 @@ body {
     -webkit-text-fill-color: transparent;
     transition: 0.5s all ease-in-out;
     margin-right: 2rem; }
+  .nav svg {
+    fill: #FA709A;
+    width: 5.5rem;
+    height: 5.5rem; }
   .nav__brand {
     letter-spacing: 2rem;
     font-size: 5rem; }
@@ -166,3 +170,12 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
     transform: scale(1.1); }
+
+.section__overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 5rem;
+  grid-gap: 5rem; }
+  .section__overview > div {
+    height: 50rem; }
