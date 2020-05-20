@@ -128,6 +128,17 @@ body {
     background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     -webkit-text-fill-color: transparent;
     transform: scale(1.05); }
+  .nav .nav__link--number {
+    position: relative;
+    -webkit-text-fill-color: unset; }
+    .nav .nav__link--number span {
+      position: absolute;
+      z-index: 6;
+      top: 50%;
+      color: #FA709A;
+      font-size: 1.3rem;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .header {
   height: 80vh;
@@ -179,6 +190,27 @@ body {
     -webkit-background-clip: text; }
     .btn--more:link, .btn--more:active, .btn--more:focus, .btn--more:visited:link, .btn--more:visited:active, .btn--more:visited:focus, .btn--more:link:link, .btn--more:link:active, .btn--more:link:focus {
       color: currentColor; }
+  .btn--checkout {
+    margin-top: auto;
+    padding: 1.5rem 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+    background-color: darkorange;
+    border: none;
+    color: white;
+    font-family: inherit;
+    transition: all 0.2s ease-in-out; }
+    .btn--checkout:focus {
+      outline-color: #ccc; }
+    .btn--checkout:hover {
+      color: #7d7d7d;
+      cursor: pointer;
+      background-color: #FEE140;
+      background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.3rem; }
 
 .section__overview {
   display: grid;
@@ -195,10 +227,15 @@ body {
 .cart {
   font-size: 1.6rem;
   position: relative;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
   .cart__photo {
     position: relative;
-    z-index: 3; }
+    z-index: 3;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
     .cart__photo--fix {
       height: 58%; }
   .cart__hot {
@@ -232,3 +269,25 @@ body {
   .cart:hover {
     transform: scale(1.1);
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); }
+
+.cart-dropdown {
+  position: absolute;
+  width: 40rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  border: 1px solid #FF9A8B;
+  background-color: white;
+  top: 9rem;
+  right: 4rem;
+  z-index: 5; }
+  .cart-dropdown .empty-message {
+    font-size: 3rem;
+    margin: 9rem auto;
+    color: #ccc; }
+
+.section-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 35rem); }

@@ -36,10 +36,24 @@
         list-style: none;
     }
     &__link { 
+        
         &:hover{
             background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
             -webkit-text-fill-color:transparent;
             transform: scale(1.05);
+        }
+    }
+    & .nav__link--number{
+        position: relative;
+        -webkit-text-fill-color: unset;
+        span {
+            position: absolute;
+            z-index: 6;
+            top: 50%;
+            color:#FA709A;
+            font-size: 1.3rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 }

@@ -33,5 +33,30 @@
             color: currentColor;
         }
     }
+    &--checkout{
+        margin-top: auto;
+        padding: 1.5rem 0;
+        font-size: 1.6rem;
+        font-weight: 900;
+        background-color: darkorange;
+        border: none;
+        color: white;
+        font-family: inherit;
+        
+        transition: all 0.2s ease-in-out;
+        &:focus{
+            outline-color: #ccc;
+        }
+        &:hover{
+            color: #7d7d7d;
+            cursor: pointer;
+            background-color: #FEE140;
+            background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.3rem;
+        }
+    }
    
 }
