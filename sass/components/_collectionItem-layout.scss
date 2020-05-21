@@ -1,5 +1,15 @@
 .section-item {
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: repeat(2,35rem);
+	grid-template-columns: repeat(5,1fr);
+	column-gap: 2rem;
+	row-gap: 5rem;
+	& > div {
+		height: 50rem;
+		flex: 1 1 auto;
+		
+		
+		margin: 0 0.75rem 1.5rem;
+		overflow: hidden;
+ 
+	}
 }
