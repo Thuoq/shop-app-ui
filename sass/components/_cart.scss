@@ -80,3 +80,56 @@
   }
 
 }
+
+.cart-item{
+	
+	&__photo{
+		background-size: cover;
+		height: 60%;
+		&--1{
+			background-image: url("https://images.pexels.com/photos/674578/pexels-photo-674578.jpeg");
+		}
+		&--2{
+			background-image: url("https://i.postimg.cc/W4Nypq8q/alex-munsell-Yr4n8-O-3-UPc-unsplash.jpg")
+		}
+		&--3{
+			background-image: url("https://i.postimg.cc/Z0kpcqLx/tai-s-captures-Ji-RSy0-Gfq-PA-unsplash.jpg")
+		}
+		&--4{
+			background-image:url("https://images.pexels.com/photos/2338015/pexels-photo-2338015.jpeg");
+		}
+		&--5{
+			background-image:url("https://images.pexels.com/photos/2087748/pexels-photo-2087748.jpeg");
+		}
+		&--6{
+			background-image: url("https://images.pexels.com/photos/5944/food-lunch-mexican-nachos.jpg")
+		}
+	}	
+	&__body{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding:  2rem;
+		flex-direction: column;
+		height: 40%;
+		color: white;
+		ul{
+			li {
+				list-style: none;
+				padding: 0.25rem 0.5rem;
+				margin-bottom: 0.5rem;
+				font-size: 1.6rem;
+    			line-height: 3rem;
+			}
+		}
+		h5{
+			font-size: 2.25rem;
+			letter-spacing: 3px;
+			color: #d8604e;
+			font-weight: 600;
+			text-shadow: 0 1rem 2.5rem rgba(0,0,0,0.25)
+  
+
+		}
+	}
+}

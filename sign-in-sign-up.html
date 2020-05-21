@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link rel="icon" href="./image/favicon-96x96.png" type="image/png">
     </head>
-    <body style="background-color: white; background-image: none;">
+    <body >
         <nav class="nav mb-lg">
             <a href="#" class="nav__brand">COWNUT</a>
             <ul class="nav__list">
@@ -23,5 +23,32 @@
                 </li>
             </ul>
         </nav>
+        <section class="signin">
+            <div class="d-left">
+                <h2 class=" mb-md">Do You Have Account ?</h2>
+                <form action="#" >
+                    <input class ="d-left__input" placeholder="Your Email:" id="emailsignin1" type="email"  /> <br>
+                    <input id="passwordsignin1" class="mb-sm" type="password"  placeholder="Your Password:" /> <br>
+                    <div>
+                        <button type="submit" class="btn btn--signin mb-md">Sign In</button>
+                        <button type="submit" class="btn btn--signin ">Sign In With Google</button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-right">
+                <h2 class="mb-md">Do You Not Have Account ? </h2>
+                <form action="" class="d-right__form">
+                    
+                    <input type="email" id="emailsignup1" placeholder="Your email" /> <br>
+                    
+                    <input type="text" id="displaynamesignup1" placeholder="Display name"><br>
+                    
+                    <input type="password" id="passwordsignup1" placeholder="Your password"> <br>
+    
+                    <input type="password" id="passwordsignup2" placeholder="Confirm Password " class="mb-sm"> <br>
+                    <button type="submit" class="btn btn--signin ">Sign Up</button>
+                </form>
+            </div>
+        </section>
     </body>
 </html>
